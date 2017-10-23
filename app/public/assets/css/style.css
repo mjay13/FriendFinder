@@ -1,0 +1,31 @@
+.banner {
+	padding: 50px;
+}
+
+.img-bg {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;  
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+}
+
+.container {
+	padding: 50px;
+}
+
+.questions {
+	padding: 20px;
+	width: 100%;
+}
+
+#submit-btn {
+	margin: 50px;
+}
+
+h4, h5 {
+	width: 100%;
+}
+
