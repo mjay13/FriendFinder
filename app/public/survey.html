@@ -204,14 +204,16 @@
         <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
         <script type="text/javascript">
         $(document).ready(function() {
+
+
             $('#submit-btn').on('click', function(event) {
                 event.preventDefault();
-                
+
                 // information collected from survey
                 var surveyInput = {
-                    name: $("#name-input").val().trim(),
-                    photoLink: $("#link-input").val().trim(),
-                    answers: [
+                    "name": $("#name-input").val().trim(),
+                    "photoLink": $("#link-input").val().trim(),
+                    "answers": [
                         $("#question-1").val().trim(),
                         $("#question-2").val().trim(),
                         $("#question-3").val().trim(),
@@ -223,18 +225,23 @@
                         $("#question-9").val().trim(),
                         $("#question-10").val().trim()
                     ]
+
                 };
 
                 console.log("friend = " + JSON.stringify(surveyInput));
 
                 // posts to friendList
-                $.post("/api/friends", surveyInput)
-                    .done(function(data) {
-                        console.log(data); 
-                    });
-            });
+                $.post("/api/friends", function(req, res) {
 
-           
+                    surveyInput.push(req.body);
+                }
+                .done(function(data) {
+                        console.log(data);
+                    }));
+
+            });
+            return false;
+
         });
         </script>
 </body>

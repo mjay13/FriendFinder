@@ -7,7 +7,7 @@ var friendList = require("../data/friends.js");
 
 module.exports = function(app) {
 	 
-	 // friend list in json object
+	 // display friend list in json object
 	 app.get('/api/friendlist', function (req, res) {
         res.json(friendList);
     });
