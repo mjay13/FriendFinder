@@ -48,139 +48,195 @@
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
-            <h4>select from the dropdown box on a scale of 1-5</h4>
-
-            <h5>where 1 is least like me, and 5 is most like me</h5>
-            <div class="questions" id="question-1">
-                <p>i get angry easily.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questions" id="question-2">
-                <p>i am filled with doubts about things.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questions" id="question-3">
-                <p>i feel others' emotions.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questions" id="question-4">
-                <p>i respect authority.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questions" id="question-5">
-                <p>i carry out my plans.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questions" id="question-6">
-                <p>i like order.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questions" id="question-7">
-                <p>i make friends easily.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questions" id="question-8">
-                <p>i take charge.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questions" id="question-9">
-                <p>i am quick to understand things.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questions" id="question-10">
-                <p>i enjoy the beauty of nature.</p>
-                <select class="custom-select">
-                    <option selected>select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
+            <h4>please submit your name, and the link for a picture of yourself.</h4>
+            <form class="survey-form">
+                <div class="form-group row form-name">
+                    <label for="name-input" class="col-2 col-form-label">name</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" placeholder="your name" id="name-input">
+                    </div>
+                </div>
+                <div class="form-group row form-url">
+                    <label for="link-input" class="col-2 col-form-label">link</label>
+                    <div class="col-10">
+                        <input class="form-control" type="url" placeholder="https://example.com/yourimage.jpg" id="link-input">
+                    </div>
+                </div>
+                <h4>select from the dropdown box on a scale of 1-5</h4>
+                <h5>where 1 is least like yourself, and 5 is most</h5>
+                <div class="form-group questions" id="question-1">
+                    <p>i get angry easily.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions" id="question-2">
+                    <p>i am filled with doubts about things.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions" id="question-3">
+                    <p>i feel others' emotions.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions" id="question-4">
+                    <p>i respect authority.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions" id="question-5">
+                    <p>i carry out my plans.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions" id="question-6">
+                    <p>i like order.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions" id="question-7">
+                    <p>i make friends easily.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions" id="question-8">
+                    <p>i take charge.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions" id="question-9">
+                    <p>i am quick to understand things.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <div class="form-group questions" id="question-10">
+                    <p>i enjoy the beauty of nature.</p>
+                    <select class="custom-select">
+                        <option selected>select</option>
+                        <option value="1">1 - not me at all</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - that's me!</option>
+                    </select>
+                </div>
+                <button id="submit-btn" type="submit" class="btn btn-info btn-lg">submit &raquo;</button>
+            </form>
         </div>
-        <p><a id="submit-btn" class="btn btn-info btn-lg" href="#" role="button">submit &raquo;</a></p>
         <br>
         <hr>
         <br>
         <footer>
-            <p><a href="#">API List</a> | <a href="https://github.com/mjay13/FriendFinder">Github Repo</a></p>
+            <p><a href="/api/friendlist">API List</a> | <a href="https://github.com/mjay13/FriendFinder">Github Repo</a></p>
             <p>Megan M. Jacobs 2017</p>
         </footer>
-    </div>
-    <!-- /container -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script>
-    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <div class="modal" id="match-modal">
+            <div class="modal-content" id="survey-modal">
+                <span class="close">&times;</span>
+                <h4>this is your best match!</h4>
+                <h5 id="friend-match"></h5>
+                <img id="image-match" class="materialboxed" width="500" src="">
+            </div>
+        </div>
+        <!-- /container -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <!-- <script src="../../dist/js/bootstrap.min.js"></script> -->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('#submit-btn').on('click', function(event) {
+                event.preventDefault();
+                
+                // information collected from survey
+                var surveyInput = {
+                    name: $("#name-input").val().trim(),
+                    photoLink: $("#link-input").val().trim(),
+                    answers: [
+                        $("#question-1").val().trim(),
+                        $("#question-2").val().trim(),
+                        $("#question-3").val().trim(),
+                        $("#question-4").val().trim(),
+                        $("#question-5").val().trim(),
+                        $("#question-6").val().trim(),
+                        $("#question-7").val().trim(),
+                        $("#question-8").val().trim(),
+                        $("#question-9").val().trim(),
+                        $("#question-10").val().trim()
+                    ]
+                };
+
+                console.log("friend = " + JSON.stringify(surveyInput));
+
+                // posts to friendList
+                $.post("/api/friends", surveyInput)
+                    .done(function(data) {
+                        console.log(data); 
+                    });
+            });
+
+           
+        });
+        </script>
 </body>
 
 </html>

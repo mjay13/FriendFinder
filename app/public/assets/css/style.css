@@ -16,7 +16,7 @@
 	padding: 50px;
 }
 
-.questions {
+.questions, .form-url, .form-name {
 	padding: 20px;
 	width: 100%;
 }
