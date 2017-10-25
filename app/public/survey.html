@@ -239,10 +239,10 @@
             $.post(url + "/api/friends", surveyInput, function(data) {
                 console.log(data, surveyInput);
 
-                $("friend-match").text(data.name);
-                $("image-match").attr("src", data.photoLink);
+                $("#friend-match").text(data.name);
+                $("#image-match").attr("src", data.photoLink);
 
-                $("match-modal").modal("toggle");
+                //$("#match-modal").modal("toggle");
 
             });
 

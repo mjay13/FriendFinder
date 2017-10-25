@@ -29,14 +29,13 @@ module.exports = function(app) {
 
         var totalDiff = 0;
 
-
         // matching object for display later
         var bestMatch = {
             name: "",
             photoLink: "",
             friendDiff: 100
         };
-        console.log("here is the match: "+bestMatch);
+        console.log("here is the match: "+bestMatch.name);
 
         for (var i = 0; i < friendList.length; i++) {
             //console.log(friendList[i].answers);
