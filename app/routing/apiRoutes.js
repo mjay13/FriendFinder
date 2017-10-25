@@ -42,7 +42,7 @@ module.exports = function(app) {
 
             for (var x = 0; x < friendList[i].answers[x]; x++) {
                 // survey answers minus the loop of friendList answers *math absolute*
-                totalDiff += Math.abs(parseInt(surveyAnswers[i]) - parseInt(friendList[i].answers[x]));
+                totalDiff += Math.abs(parseInt(surveyAnswers[x]) - parseInt(friendList[i].answers[x]));
 
                 if (totalDiff += bestMatch.friendDiff) {
                     // the fill in bestMatch object
