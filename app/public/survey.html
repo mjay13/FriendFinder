@@ -9,6 +9,16 @@
     <link rel="icon" href="./assets/images/ffFavicon.png">
     <title>friend finder | survey</title>
     <!-- Bootstrap core CSS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+   <!--  <script>
+    // window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script> -->
+
+
     <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/8a9d30ef23.js"></script>
@@ -185,21 +195,21 @@
             <p>Megan M. Jacobs 2017</p>
         </footer>
     </div>
-    <div class="modal fade" id="match-modal">
+    <div class="modal fade" id="matchModal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h4>this is your best match!</h4>
             <h5 id="friend-match"></h5>
-            <img id="image-match" class="materialboxed" width="500" src="">
+            <img id="image-match" class="materialboxed" width="50" src="">
         </div>
     </div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script>
     // window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> -->
     <!-- <script src="../../dist/js/bootstrap.min.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
@@ -246,8 +256,8 @@
                 $("#friend-match").text(data.name);
                 $("#image-match").attr("src", data.photoLink);
 
-                $("#match-modal").modal("toggle");
-                // alert("you did it"+data.name+"|"+data.photoLink);
+                $("#matchModal").modal("toggle");
+                // alert("you did it "+data.name+" | "+data.photoLink);
             });
 
         });

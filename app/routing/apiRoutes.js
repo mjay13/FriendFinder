@@ -31,7 +31,7 @@ module.exports = function(app) {
 
         // matching object for response
         var bestMatch = {
-            name: "",
+            name: "You have to fill out all of the content to have a match!",
             photoLink: "",
             friendDiff: 100
         };
