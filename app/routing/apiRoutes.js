@@ -29,13 +29,13 @@ module.exports = function(app) {
 
         var totalDiff = 0;
 
-        // matching object for display later
+        // matching object for response
         var bestMatch = {
             name: "",
             photoLink: "",
             friendDiff: 100
         };
-        console.log("here is the match: "+bestMatch.name);
+       
 
         for (var i = 0; i < friendList.length; i++) {
             //console.log(friendList[i].answers);
@@ -44,7 +44,7 @@ module.exports = function(app) {
                 // survey answers minus the loop of friendList answers *math absolute*
                 totalDiff += Math.abs(parseInt(surveyAnswers[x]) - parseInt(friendList[i].answers[x]));
 
-                if (totalDiff += bestMatch.friendDiff) {
+                if (totalDiff <= bestMatch.friendDiff) {
                     // the fill in bestMatch object
                     bestMatch.name = friendList[i].name;
                     bestMatch.photoLink = friendList[i].photoLink;
@@ -57,6 +57,7 @@ module.exports = function(app) {
         // console.log(surveyAnswers);
 
         res.json(bestMatch);
+         console.log("here is the match: "+bestMatch.name);
     });
 
 };

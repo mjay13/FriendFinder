@@ -186,7 +186,7 @@
         </footer>
     </div>
     <div class="modal fade" id="match-modal">
-        <div class="modal-content" id="survey-modal">
+        <div class="modal-content">
             <span class="close">&times;</span>
             <h4>this is your best match!</h4>
             <h5 id="friend-match"></h5>
@@ -233,16 +233,20 @@
 
             // validate form?
 
+            // clear  form values?
+
 
             var url = window.location.origin;
             // posts to friendList
             $.post(url + "/api/friends", surveyInput, function(data) {
-                console.log(data, surveyInput);
+                //console.log(data, surveyInput);
+
+                console.log("friend match: "+data.name);
 
                 $("#friend-match").text(data.name);
                 $("#image-match").attr("src", data.photoLink);
 
-                //$("#match-modal").modal("toggle");
+                $("#match-modal").modal("toggle");
                 // alert("you did it"+data.name+"|"+data.photoLink);
             });
 
