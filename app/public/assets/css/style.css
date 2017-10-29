@@ -29,3 +29,14 @@ h4, h5 {
 	width: 100%;
 }
 
+.modal-body {
+	padding: 50px;
+}
+
+.modal-title {
+	padding-left: 20px;
+}
+
+#image-match {
+	padding: 10px;
+}
